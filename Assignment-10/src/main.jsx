@@ -12,6 +12,8 @@ import Blog from './components/Blog/Blog';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Chef from './components/Chef/Chef';
+import Recipes from './components/Recipes/Recipes';
+import Recipe from './components/Recipe/Recipe';
 
 
 const router = createBrowserRouter([
@@ -38,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/chef',
         element: <Chef></Chef>
+      },
+      {
+        path: '/recipe',
+        element: <Recipe></Recipe>
       }
     ]
   },

@@ -68,10 +68,10 @@ const Nav = () => {
                             ) : (
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <button className="btn btn-primary ms-2" onClick={() => navigate('/login')}>Login</button>
+                                        <button className="btn thm-bg-clr ms-2 text-white" onClick={() => navigate('/login')}>Login</button>
                                     </li>
                                     <li className="nav-item">
-                                        <button className="btn btn-primary ms-2" onClick={() => navigate('/signup')}>Sign up</button>
+                                        <button className="btn thm-bg-clr ms-2 text-white" onClick={() => navigate('/signup')}>Sign up</button>
                                     </li>
                                 </ul>
                             )}
