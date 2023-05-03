@@ -1,7 +1,9 @@
 {
-    "authors": [
+    "chefs": [
         {
-            "name": "Alice",
+            "name": "Alice Smith",
+            "picture": "https://randomuser.me/api/portraits/women/1.jpg",
+            "experience": 10,
             "recipes": [
                 {
                     "name": "Spaghetti Bolognese",
@@ -36,10 +38,13 @@
                     "rating": 4.2,
                     "favourite": false
                 }
-            ]
+            ],
+            "likes": 100
         },
         {
-            "name": "Bob",
+            "name": "Bob Johnson",
+            "picture": "https://randomuser.me/api/portraits/men/2.jpg",
+            "experience": 8,
             "recipes": [
                 {
                     "name": "Pesto Pasta",
@@ -70,10 +75,13 @@
                     "rating": 4.3,
                     "favourite": false
                 }
-            ]
+            ],
+            "likes": 80
         },
         {
-            "name": "Charlie",
+            "name": "Charlie Brown",
+            "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+            "experience": 12,
             "recipes": [
                 {
                     "name": "Roast Chicken",
@@ -85,7 +93,7 @@
                         "1 tbsp dried rosemary",
                         "Salt and pepper to taste"
                     ],
-                    "method": "1. Preheat the oven to 200°C. \n2. Cut one lemon in half and stuff it inside the chicken. \n3. Cut the other lemon into slices and place them around the chicken. \n4. Crush the garlic cloves and mix them with the thyme, rosemary, salt and pepper. \n5. Rub the mixture all over the chicken. \n6. Roast the chicken for 1 hour and 30 minutes, or until the juices run clear. \n7. Let the chicken rest for 10 minutes before carving. \n8. Serve hot.",
+                    "method": "1. Preheat the oven to 200°C. \n2. Cut one lemon in half and stuff it inside the chicken. \n3. Cut the other lemon into slices and place them around the chicken. \n4. Crush the garlic cloves and mix them with the thyme, rosemary, salt and pepper. \n5. Rub the mixture all over the chicken.\n. Roast the chicken for 1 hour and 30 minutes or until the juices run clear. \n7. Let the chicken rest for 10 minutes before carving. \n8. Serve hot.",
                     "rating": 4.7,
                     "favourite": true
                 },
@@ -93,7 +101,7 @@
                     "name": "Vegetable Stir Fry",
                     "ingredients": [
                         "1 red pepper",
-                        "1 yellowpepper",
+                        "1 yellow pepper",
                         "1 green pepper",
                         "1 onion",
                         "2 cloves garlic",
@@ -107,7 +115,136 @@
                     "rating": 4.1,
                     "favourite": false
                 }
-            ]
+            ],
+            "likes": 120
+        },
+        {
+            "name": "David Lee",
+            "picture": "https://randomuser.me/api/portraits/men/4.jpg",
+            "experience": 15,
+            "recipes": [
+                {
+                    "name": "Beef Burger",
+                    "ingredients": [
+                        "500g minced beef",
+                        "1 onion",
+                        "1 egg",
+                        "1/2 cup breadcrumbs",
+                        "1 tsp salt",
+                        "1 tsp black pepper",
+                        "4 burger buns",
+                        "4 slices of cheese",
+                        "Lettuce, tomato, and condiments of your choice"
+                    ],
+                    "method": "1. In a bowl, mix together the minced beef, onion, egg, breadcrumbs, salt and pepper. \n2. Divide the mixture into 4 equal portions and shape them into patties. \n3. Heat a grill or frying pan over medium-high heat. \n4. Cook the patties for 3-4 minutes on each side, or until cooked to your liking. \n5. Toast the burger buns and place a slice of cheese on each patty. \n6. Assemble the burgers with lettuce, tomato, and condiments of your choice. \n7. Serve hot.",
+                    "rating": 4.6,
+                    "favourite": true
+                },
+                {
+                    "name": "Fish Tacos",
+                    "ingredients": [
+                        "500g white fish fillets",
+                        "1/2 cup flour",
+                        "1 tsp paprika",
+                        "1 tsp cumin",
+                        "1 tsp garlic powder",
+                        "1/2 tsp salt",
+                        "1/4 tsp black pepper",
+                        "1/2 cup beer",
+                        "1 egg",
+                        "1/2 cup breadcrumbs",
+                        "8 small tortillas",
+                        "Lettuce, tomato, and salsa of your choice"
+                    ],
+                    "method": "1. Cut the fish fillets into small pieces. \n2. In a bowl, mix together the flour, paprika, cumin, garlic powder, salt and pepper. \n3. In another bowl, whisk together the beer and egg. \n4. Dip the fish pieces into the flour mixture, then into the beer mixture, and finally into the breadcrumbs. \n5. Heat some oil in a pan over medium-high heat. \n6. Fry the fish pieces for 2-3 minutes on each side, or until golden brown. \n7. Warm the tortillas in the oven or microwave. \n8. Assemble the tacos with lettuce, tomato, and salsa of your choice. \n9. Serve hot.",
+                    "rating": 4.4,
+                    "favourite": false
+                }
+            ],
+            "likes": 90
+        },
+        {
+            "name": "Emily Chen",
+            "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+            "experience": 7,
+            "recipes": [
+                {
+                    "name": "Mushroom Risotto",
+                    "ingredients": [
+                        "1 cup arborio rice",
+                        "4 cups chicken or vegetable broth",
+                        "1 onion",
+                        "2 cloves garlic",
+                        "1 cup sliced mushrooms",
+                        "1/2 cup grated parmesan cheese",
+                        "2 tbsp butter",
+                        "2 tbsp olive oil",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. In a pot, heat the broth over low heat. \n2. In a separate pot, heat the olive oil over medium heat. \n3. Add the onion and garlic and cook until softened. \n4. Add the rice and stir until coated in the oil. \n5. Add a ladleful of broth to the rice and stir until absorbed. \n6. Continue adding broth, one ladleful at a time, and stirring until absorbed. \n7. After about 20 minutesor when the rice is cooked but still slightly firm to the bite. \n. In a separate pan, sauté the mushrooms in butter until tender. \n9. Add the mushrooms and parmesan cheese to the rice and stir until combined. \n10. Season with salt and pepper to taste. \n11. Serve hot.",
+                    "rating": 4.2,
+                    "favourite": false
+                },
+                {
+                    "name": "Chocolate Brownies",
+                    "ingredients": [
+                        "1 cup butter",
+                        "2 cups sugar",
+                        "4 eggs",
+                        "1 tsp vanilla extract",
+                        "3/4 cup cocoa powder",
+                        "1 cup flour",
+                        "1/2 tsp salt",
+                        "1/2 tsp baking powder"
+                    ],
+                    "method": "1. Preheat the oven to 180°C. \n2. In a bowl, cream together the butter and sugar until light and fluffy. \n3. Beat in the eggs one at a time, then stir in the vanilla extract. \n4. In a separate bowl, whisk together the cocoa powder, flour, salt and baking powder. \n5. Gradually add the dry ingredients to the butter mixture, stirring until well combined. \n6. Pour the batter into a greased baking dish. \n7. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean. \n8. Let the brownies cool before cutting into squares. \n9. Serve and enjoy!",
+                    "rating": 4.5,
+                    "favourite": true
+                }
+            ],
+            "likes": 70
+        },
+        {
+            "name": "John Doe",
+            "picture": "https://randomuser.me/api/portraits/men/2.jpg",
+            "experience": 5,
+            "recipes": [
+                {
+                    "name": "Beef Stir-Fry",
+                    "ingredients": [
+                        "500g beef sirloin",
+                        "1 red pepper",
+                        "1 yellow pepper",
+                        "1 green pepper",
+                        "1 onion",
+                        "2 cloves garlic",
+                        "1 tbsp soy sauce",
+                        "1 tsp honey",
+                        "1 tsp cornstarch",
+                        "1 tsp ginger powder",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Cut the beef into thin strips. \n2. Slice the peppers and onion. \n3. In a bowl, mix together the soy sauce, honey, cornstarch, ginger powder, salt, and pepper. \n4. In a wok or large skillet, heat some oil over high heat. \n5. Add the beef and stir-fry for 2-3 minutes until browned. \n6. Add the garlic and stir-fry for another minute. \n7. Add the peppers and onion and stir-fry for 2-3 minutes until tender. \n8. Pour in the soy sauce mixture and stir-fry for another minute until the sauce thickens. \n9. Serve over rice.",
+                    "rating": 4.7,
+                    "favourite": true
+                },
+                {
+                    "name": "Creamy Mushroom Pasta",
+                    "ingredients": [
+                        "500g pasta",
+                        "500g mushrooms",
+                        "2 cloves garlic",
+                        "1 cup heavy cream",
+                        "1/2 cup grated parmesan cheese",
+                        "1 tsp dried thyme",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Cook the pasta according to package instructions. \n2. Slice the mushrooms and mince the garlic. \n3. In a pan, sauté the mushrooms over medium heat until tender. \n4. Add the garlic and cook for another minute. \n5. Pour in the heavy cream and add the thyme, salt, and pepper. \n6. Let simmer until the sauce thickens. \n7. Add the parmesan cheese and stir until melted. \n8. Serve the sauce over the cooked pasta.",
+                    "rating": 4.4,
+                    "favourite": false
+                }
+            ],
+            "likes": 75
         }
     ]
 }

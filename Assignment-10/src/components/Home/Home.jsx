@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Recipes from "../Recipes/Recipes"
+import Chefs from "../Chefs/Chefs";
 
 const Home = () => {
   const [recipeData, setRecipeData] = useState([]);
@@ -17,20 +18,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <div className="bg-danger py-3">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-md-6">
-              <h3 className="text-white mb-0">Sign up/ Login to gain full access</h3>
-            </div>
-            <div className="col-md-6 text-end">
-              <button className="btn btn-primary ms-2" onClick={() => navigate('/login')}>Login</button>
-              <button className="btn btn-primary ms-2" onClick={() => navigate('/signup')}>Sign up</button>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className="w-75 h-75 mx-auto my-auto">
         <div id="carouselExampleCaptions" className="carousel slide">
           <div className="carousel-indicators">
@@ -75,7 +62,7 @@ const Home = () => {
       <div>
         <h3 className="text-center">Latest Recipes</h3>
         <div>
-          <Recipes></Recipes>
+          <Chefs></Chefs>
         </div>
       </div>
     </div>

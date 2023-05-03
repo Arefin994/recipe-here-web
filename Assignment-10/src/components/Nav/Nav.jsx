@@ -38,7 +38,7 @@ const Nav = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav flex-grow-1">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                             </li>
@@ -51,27 +51,31 @@ const Nav = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to='/blog'>Blog</Link>
                             </li>
+                        </ul>
+                        <div className="ms-auto">
                             {user ? (
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src={user.photoURL} alt={user.displayName} className="rounded-circle me-2" style={{ width: '40px', height: '40px' }} />
-                                        {user.email}
-                                    </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><button className="dropdown-item" onClick={handleSignOut}>Log out</button></li>
-                                    </ul>
-                                </li>
+                                <ul className="navbar-nav">
+                                    <li className="nav-item dropdown">
+                                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src={user.photoURL} alt={user.displayName} className="rounded-circle me-2" style={{ width: '40px', height: '40px' }} />
+                                            {user.email}
+                                        </a>
+                                        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><button className="dropdown-item" onClick={handleSignOut}>Log out</button></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             ) : (
-                                <>
+                                <ul className="navbar-nav">
                                     <li className="nav-item">
                                         <button className="btn btn-primary ms-2" onClick={() => navigate('/login')}>Login</button>
                                     </li>
                                     <li className="nav-item">
                                         <button className="btn btn-primary ms-2" onClick={() => navigate('/signup')}>Sign up</button>
                                     </li>
-                                </>
+                                </ul>
                             )}
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
