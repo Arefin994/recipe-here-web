@@ -1,0 +1,113 @@
+{
+    "authors": [
+        {
+            "name": "Alice",
+            "recipes": [
+                {
+                    "name": "Spaghetti Bolognese",
+                    "ingredients": [
+                        "500g spaghetti",
+                        "500g minced beef",
+                        "1 onion",
+                        "2 cloves garlic",
+                        "1 can chopped tomatoes",
+                        "1 tbsp tomato puree",
+                        "1 tsp dried oregano",
+                        "1 tsp dried basil",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Cook spaghetti according to package instructions. \n2. In a separate pan, brown the minced beef over medium heat. \n3. Add the onion and garlic and cook until softened. \n4. Add the chopped tomatoes, tomato puree, oregano, basil, salt and pepper. \n5. Simmer for 20 minutes. \n6. Serve the sauce over the cooked spaghetti.",
+                    "rating": 4.5,
+                    "favourite": true
+                },
+                {
+                    "name": "Chicken Curry",
+                    "ingredients": [
+                        "500g chicken breast",
+                        "1 onion",
+                        "2 cloves garlic",
+                        "1 can coconut milk",
+                        "2 tbsp curry powder",
+                        "1 tsp cumin",
+                        "1 tsp coriander",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Cut the chicken into bite-sized pieces. \n2. In a pan, brown the chicken over medium heat. \n3. Add the onion and garlic and cook until softened. \n4. Add the coconut milk, curry powder, cumin, coriander, salt and pepper. \n5. Simmer for 20 minutes. \n6. Serve with rice.",
+                    "rating": 4.2,
+                    "favourite": false
+                }
+            ]
+        },
+        {
+            "name": "Bob",
+            "recipes": [
+                {
+                    "name": "Pesto Pasta",
+                    "ingredients": [
+                        "500g pasta",
+                        "1 jar pesto sauce",
+                        "1/2 cup grated parmesan cheese"
+                    ],
+                    "method": "1. Cook pasta according to package instructions. \n2. Drain the pasta and return it to the pot. \n3. Add the pesto sauce and parmesan cheese. \n4. Stir until the pasta is coated in the sauce. \n5. Serve hot.",
+                    "rating": 4.8,
+                    "favourite": true
+                },
+                {
+                    "name": "Beef Stew",
+                    "ingredients": [
+                        "500g stewing beef",
+                        "2 onions",
+                        "4 carrots",
+                        "4 potatoes",
+                        "2 cloves garlic",
+                        "1 can chopped tomatoes",
+                        "1 tbsp tomato puree",
+                        "1 tsp dried thyme",
+                        "1 tsp dried rosemary",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Cut the beef into bite-sized pieces. \n2. In a pot, brown the beef over medium heat. \n3. Add the onion and garlic and cook until softened. \n4. Add the chopped tomatoes, tomato puree, thyme, rosemary, salt and pepper. \n5. Add enough water to cover the ingredients. \n6. Simmer for 2 hours. \n7. Add the carrots and potatoes and simmer for another hour. \n8. Serve hot.",
+                    "rating": 4.3,
+                    "favourite": false
+                }
+            ]
+        },
+        {
+            "name": "Charlie",
+            "recipes": [
+                {
+                    "name": "Roast Chicken",
+                    "ingredients": [
+                        "1 whole chicken",
+                        "2 lemons",
+                        "4 cloves garlic",
+                        "1 tbsp dried thyme",
+                        "1 tbsp dried rosemary",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Preheat the oven to 200°C. \n2. Cut one lemon in half and stuff it inside the chicken. \n3. Cut the other lemon into slices and place them around the chicken. \n4. Crush the garlic cloves and mix them with the thyme, rosemary, salt and pepper. \n5. Rub the mixture all over the chicken. \n6. Roast the chicken for 1 hour and 30 minutes, or until the juices run clear. \n7. Let the chicken rest for 10 minutes before carving. \n8. Serve hot.",
+                    "rating": 4.7,
+                    "favourite": true
+                },
+                {
+                    "name": "Vegetable Stir Fry",
+                    "ingredients": [
+                        "1 red pepper",
+                        "1 yellowpepper",
+                        "1 green pepper",
+                        "1 onion",
+                        "2 cloves garlic",
+                        "1 tbsp soy sauce",
+                        "1 tbsp oyster sauce",
+                        "1 tsp cornstarch",
+                        "1/2 cup water",
+                        "Salt and pepper to taste"
+                    ],
+                    "method": "1. Cut the peppers and onion into thin strips. \n2. Crush the garlic cloves. \n3. In a pan, heat some oil over high heat. \n4. Add the peppers, onion and garlic and stir fry for 2-3 minutes. \n5. In a small bowl, mix together the soy sauce, oyster sauce, cornstarch, water, salt and pepper. \n6. Add the sauce to the pan and stir fry for another 2-3 minutes. \n7. Serve hot with rice.",
+                    "rating": 4.1,
+                    "favourite": false
+                }
+            ]
+        }
+    ]
+}

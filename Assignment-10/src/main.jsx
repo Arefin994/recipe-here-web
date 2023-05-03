@@ -9,6 +9,8 @@ import {
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 
 
 const router = createBrowserRouter([
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/signup',
+        element: <Signup></Signup>
       }
     ]
   },

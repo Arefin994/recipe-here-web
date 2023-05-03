@@ -1,7 +1,34 @@
+import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import app from '../../firebase/firebase.config';
+import { useState, useEffect } from 'react';
 
-import { Link, Outlet } from 'react-router-dom';
+const auth = getAuth(app);
 
 const Nav = () => {
+    const navigate = useNavigate();
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+            } else {
+                setUser(null);
+            }
+        });
+    }, []);
+
+    const handleSignOut = () => {
+        signOut(auth)
+            .then(() => {
+                setUser(null);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    };
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -24,11 +51,27 @@ const Nav = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to='/blog'>Blog</Link>
                             </li>
+                            {user ? (
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src={user.photoURL} alt={user.displayName} className="rounded-circle me-2" style={{ width: '40px', height: '40px' }} />
+                                        {user.email}
+                                    </a>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><button className="dropdown-item" onClick={handleSignOut}>Log out</button></li>
+                                    </ul>
+                                </li>
+                            ) : (
+                                <>
+                                    <li className="nav-item">
+                                        <button className="btn btn-primary ms-2" onClick={() => navigate('/login')}>Login</button>
+                                    </li>
+                                    <li className="nav-item">
+                                        <button className="btn btn-primary ms-2" onClick={() => navigate('/signup')}>Sign up</button>
+                                    </li>
+                                </>
+                            )}
                         </ul>
-                    </div>
-                    <div className="d-flex justify-content-end">
-                        <button className="btn btn-primary ms-2">Login</button>
-                        <button className="btn btn-primary ms-2">Sign up</button>
                     </div>
                 </div>
             </nav>
