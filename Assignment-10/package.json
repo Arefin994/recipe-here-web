@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react-bootstrap": "^2.7.4",
-    "react-router-dom": "^6.11.0"
+    "react-router-dom": "^6.11.0",
+    "react-toastify": "^9.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
