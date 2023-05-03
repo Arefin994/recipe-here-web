@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Recipes from "../Recipes/Recipes"
 import Chefs from "../Chefs/Chefs";
+import './Home.css';
 
 const Home = () => {
-  const [recipeData, setRecipeData] = useState([]);
-
-
+  const [chef, setChef] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allData")
+    fetch('http://localhost:5000/allData')
       .then(res => res.json())
-      .then(data => setRecipeData(data.recipes))
-      .catch((error) => console.log(error));
-  }, []);
-
-  console.log(recipeData)
-
-
+      .then(data => setChef(data));
+    console.log("home")
+    console.log({ chef })
+    { console.log(chef) }
+  }, [])
+  const handleViewRecipes = (chef) => {
+    localStorage.setItem('selectedChef', JSON.stringify(chef));
+    location.href = '/chef';
+  };
   return (
     <div>
       <div className="w-75 h-75 mx-auto my-auto">
@@ -60,9 +61,20 @@ const Home = () => {
       </div>
 
       <div>
-        <h3 className="text-center">Latest Recipes</h3>
+        <h3 className="text-center mt-4">Our Top <span className="thm-clr">Chefs</span></h3>
         <div>
-          <Chefs></Chefs>
+          {chef.allItems?.chefs.map((chef, index) => (
+            <div key={chef.name} className="chef-card">
+              <img src={chef.picture} alt={chef.name} className="chef-image" />
+              <div className="chef-details">
+                <div className="chef-name">{chef.name}</div>
+                <div className="chef-experience">{chef.experience} years of experience</div>
+                <div className="chef-recipes">{chef.recipes.length} recipes</div>
+                <div className="chef-likes">{chef.likes} likes</div>
+                <button className="view-recipes-btn" onClick={() => handleViewRecipes(chef)}>View Recipes</button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

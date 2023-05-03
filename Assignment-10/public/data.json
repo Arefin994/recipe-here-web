@@ -2,7 +2,7 @@
     "chefs": [
         {
             "name": "Alice Smith",
-            "picture": "https://randomuser.me/api/portraits/women/1.jpg",
+            "picture": "https://media.licdn.com/dms/image/C4E03AQG0XqUEmJ-ziA/profile-displayphoto-shrink_800_800/0/1517372237364?e=2147483647&v=beta&t=xfkMlGtqZvMLd6d7gYQ0IdTfySLMrbb9BWr0tZARYgw",
             "experience": 10,
             "recipes": [
                 {
@@ -43,7 +43,7 @@
         },
         {
             "name": "Bob Johnson",
-            "picture": "https://randomuser.me/api/portraits/men/2.jpg",
+            "picture": "https://media.licdn.com/dms/image/D5603AQEZE-azhtKijg/profile-displayphoto-shrink_800_800/0/1678389486766?e=2147483647&v=beta&t=IqNmGVDw7Y8F-Iob5TkwxhBGdgRjLxVQY4xUo1wJnkU",
             "experience": 8,
             "recipes": [
                 {
@@ -79,8 +79,8 @@
             "likes": 80
         },
         {
-            "name": "Charlie Brown",
-            "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+            "name": "Natasha Brown",
+            "picture": "https://cdnimg.webstaurantstore.com/images/products/large/501785/1895440.jpg",
             "experience": 12,
             "recipes": [
                 {
@@ -120,7 +120,7 @@
         },
         {
             "name": "David Lee",
-            "picture": "https://randomuser.me/api/portraits/men/4.jpg",
+            "picture": "https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=425,format=auto/sites/default/files/styles/768x768/public/d8/images/canvas/2022/06/02/d6a88942-b994-46f4-8dc2-73edd00476c4_9cb024b7.jpg?itok=NJmMwiHD&v=1654159218",
             "experience": 15,
             "recipes": [
                 {
@@ -165,7 +165,7 @@
         },
         {
             "name": "Emily Chen",
-            "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+            "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVhEy2y8IdgyudIOkOqj-TkixhYssnjt5TjA&usqp=CAU",
             "experience": 7,
             "recipes": [
                 {
@@ -206,7 +206,7 @@
         },
         {
             "name": "John Doe",
-            "picture": "https://randomuser.me/api/portraits/men/2.jpg",
+            "picture": "https://asiacuisine.com/files/uploads//1515572404.08493.jpg",
             "experience": 5,
             "recipes": [
                 {
