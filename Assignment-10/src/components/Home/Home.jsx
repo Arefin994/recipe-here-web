@@ -62,7 +62,7 @@ const Home = () => {
 
       <div>
         <h3 className="text-center mt-4">Our Top <span className="thm-clr">Chefs</span></h3>
-        <div>
+        <div className="chefs-container">
           {chef.allItems?.chefs.map((chef, index) => (
             <div key={chef.name} className="chef-card">
               <img src={chef.picture} alt={chef.name} className="chef-image" />
