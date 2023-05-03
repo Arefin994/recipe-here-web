@@ -66,4 +66,7 @@
   .view-recipes-btn:hover {
     background-color: #ff6347;
   }
-  
+  .acc-img{
+    height: 500px;
+    width: 700px;
+  }

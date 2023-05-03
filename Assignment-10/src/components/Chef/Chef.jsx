@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Chef.css';
+import Footer from '../Footer/Footer';
 
 const Chef = () => {
   const chefData = JSON.parse(localStorage.getItem('selectedChef'));
@@ -60,6 +61,7 @@ const Chef = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

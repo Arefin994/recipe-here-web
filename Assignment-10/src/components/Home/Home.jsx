@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Recipes from "../Recipes/Recipes"
 import Chefs from "../Chefs/Chefs";
 import './Home.css';
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const [chef, setChef] = useState([]);
@@ -28,21 +29,21 @@ const Home = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg" className="d-block w-100" alt="..." />
+              <img src="https://cdn.tasteatlas.com/images/toplistarticles/8cc45833c34a4bc99d85375ecfde18f6.jpg?m=facebook" className="d-block w-100 acc-img" alt="..." />
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg" className="d-block w-100" alt="..." />
+              <img src="https://www.thespruceeats.com/thmb/M0dYZV-gnTFtxX1pvGtfLIex1ww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-Ridofranz-1053855542-60b89644efd2470fbfb6475b175064df.jpg" className="d-block w-100 acc-img"  alt="..." />
               <div className="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
             </div>
             <div className="carousel-item">
-              <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg" className="d-block w-100" alt="..." />
+              <img src="https://restaurantclicks.com/wp-content/uploads/2022/04/Popular-Japanese-Foods.jpg" className="d-block w-100 acc-img" alt="..." />
               <div className="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -77,6 +78,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
 
   );

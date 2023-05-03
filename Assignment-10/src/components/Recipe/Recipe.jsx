@@ -1,6 +1,7 @@
 import React from 'react';
 import './Recipe.css'
 import './Recipe.css';
+import Footer from '../Footer/Footer';
 
 const Recipe = () => {
   const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
@@ -45,6 +46,7 @@ const Recipe = () => {
           <button className="thm-bg-clr text-white mb-5" onClick={handleGoBack}>Go back</button>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
