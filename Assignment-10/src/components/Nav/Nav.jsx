@@ -33,7 +33,7 @@ const Nav = () => {
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">RecipeHere</a>
+                    <a className="navbar-brand" href="#">Recipe<span className='thm-clr'>Here</span></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -46,7 +46,7 @@ const Nav = () => {
                                 <Link className="nav-link" to="/recipes">Recipes</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/authors">Authors</Link>
+                                <Link className="nav-link" to="/chefs">Chefs</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to='/blog'>Blog</Link>

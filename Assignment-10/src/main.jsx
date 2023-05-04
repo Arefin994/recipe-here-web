@@ -14,6 +14,8 @@ import Signup from './components/Signup/Signup';
 import Chef from './components/Chef/Chef';
 import Recipes from './components/Recipes/Recipes';
 import Recipe from './components/Recipe/Recipe';
+import NavChef from './components/NavChef/NavChef';
+import NavRecipes from './components/NavRecipes/NavRecipes';
 
 
 const router = createBrowserRouter([
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
       {
         path: '/recipe',
         element: <Recipe></Recipe>
+      },
+      {
+        path: '/chefs',
+        element: <NavChef></NavChef>
+      },
+      {
+        path: '/recipes',
+        element: <NavRecipes></NavRecipes>
       }
     ]
   },

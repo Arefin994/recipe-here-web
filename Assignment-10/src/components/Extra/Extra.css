@@ -2,3 +2,67 @@
     height: 400px;
     width: 600px;
 }
+.banner-container {
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  
+  .banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  .banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .banner-btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .banner-btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  

@@ -21,7 +21,7 @@ const Home = () => {
   };
   return (
     <div>
-      <div className="w-75 h-75 mx-auto my-auto">
+      <div className="w-100 h-100 corso mx-auto my-auto">
         <div id="carouselExampleCaptions" className="carousel slide">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -32,22 +32,22 @@ const Home = () => {
             <div className="carousel-item active">
               <img src="https://cdn.tasteatlas.com/images/toplistarticles/8cc45833c34a4bc99d85375ecfde18f6.jpg?m=facebook" className="d-block w-100 acc-img" alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5>Easy to follow recipes</h5>
+                <p>Discover the rich and diverse flavors of Japanese cuisine.</p>
               </div>
             </div>
             <div className="carousel-item">
               <img src="https://www.thespruceeats.com/thmb/M0dYZV-gnTFtxX1pvGtfLIex1ww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-Ridofranz-1053855542-60b89644efd2470fbfb6475b175064df.jpg" className="d-block w-100 acc-img"  alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5>Sushi, Ramen, More</h5>
+                <p>From sushi to ramen, explore the delicious world of Japanese food.</p>
               </div>
             </div>
             <div className="carousel-item">
               <img src="https://restaurantclicks.com/wp-content/uploads/2022/04/Popular-Japanese-Foods.jpg" className="d-block w-100 acc-img" alt="..." />
               <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5>Japanese Culinary Adventures</h5>
+                <p>Master the art of cooking authentic Japanese dishes with our easy-to-follow recipes.</p>
               </div>
             </div>
           </div>
