@@ -1,5 +1,6 @@
 import React from 'react';
 import './Error.css'
+
 const Error = () => {
     return (
         <div className="error-404 d-flex">
@@ -18,6 +19,7 @@ const Error = () => {
             </div>
             <div className='w-50'>
                 <img className='err-img' src="https://internetdevels.com/sites/default/files/public/blog_preview/404_page_cover.jpg" alt="" />
+
             </div>
         </div>
     );
