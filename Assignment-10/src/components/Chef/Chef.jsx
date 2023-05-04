@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Chef.css';
 import Footer from '../Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Chef = () => {
   const chefData = JSON.parse(localStorage.getItem('selectedChef'));
@@ -10,6 +12,7 @@ const Chef = () => {
     const updatedRecipes = [...recipes];
     updatedRecipes[index].favourite = true;
     setRecipes(updatedRecipes);
+    toast.success('Added to favourite');
   };
 
   const handleViewRecipe = (recipe) => {
@@ -20,6 +23,7 @@ const Chef = () => {
   console.log(chefData);
   return (
     <div className="container">
+      <ToastContainer />
       <div>
         <div>
           <h2 className="thm-clr">{chefData.name}</h2>

@@ -1,6 +1,7 @@
 import './App.css'
 import CustomNavbar from './components/CustomNavbar/CustomNavbar'
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
@@ -34,6 +35,7 @@ const Nav = () => {
     };
 
     return (
+        
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
