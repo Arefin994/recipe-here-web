@@ -2,6 +2,8 @@ import React from 'react';
 import './Recipe.css'
 import './Recipe.css';
 import Footer from '../Footer/Footer';
+import Rating from 'react-rating';
+import { FaRegStar, FaStar } from 'react-icons/fa';
 
 
 const Recipe = () => {
@@ -39,7 +41,21 @@ const Recipe = () => {
       <div className="row mt-4">
         <div className="col-md-12">
           <h3>Rating:</h3>
-          <p>{selectedRecipe.rating}</p>
+          <div className='d-flex'>
+            <div className='mx-1'>
+              <Rating
+                placeholderRating={selectedRecipe.rating}
+                readonly
+                emptySymbol={<FaRegStar></FaRegStar>}
+                placeholderSymbol={<FaStar></FaStar>}
+                fullSymbol={<FaStar />}
+              />
+            </div>
+
+            <div className='mx-1'>
+              <p>{selectedRecipe.rating}</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="row mt-4">

@@ -4,6 +4,9 @@ import Footer from '../Footer/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { FaRegStar, FaStar } from 'react-icons/fa';
+import Rating from 'react-rating';
+
 const Chef = () => {
   const chefData = JSON.parse(localStorage.getItem('selectedChef'));
   const [recipes, setRecipes] = useState(chefData.recipes);
@@ -50,7 +53,24 @@ const Chef = () => {
                     <div className="my-auto"><img className='food-img' src={recipe.image} alt="nai" /></div>
                     <div>
                       <h4>{recipe.name}</h4>
-                      <p>Rating: {recipe.rating}</p>
+                      <div className='d-flex'>
+                        <div>
+                          <p>Rating: </p>
+                        </div>
+                        <div className='mx-1'>
+                          <Rating
+                            placeholderRating={recipe.rating}
+                            readonly
+                            emptySymbol={<FaRegStar></FaRegStar>}
+                            placeholderSymbol={<FaStar></FaStar>}
+                            fullSymbol={<FaStar />}
+                          />
+                        </div>
+
+                        <div className='mx-1'>
+                          <p>{recipe.rating}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="my-auto">
