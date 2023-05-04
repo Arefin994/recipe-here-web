@@ -8,5 +8,5 @@ live site link: https://comfy-raindrop-0338e9.netlify.app/home
 * You can Choose Chefs to learn form
 * You can view Chef details and Their recipe
 * You can  see recipe details 
-* You can Login and Log out of the site with email. (Google and git sign in working from local but not from Netlify deploy)
+* You can Login and Log out of the site with email. 
 
