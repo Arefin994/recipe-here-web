@@ -78,7 +78,6 @@ const Home = () => {
             </div>
           ) : (
             <>
-             
               <div className="chefs-container">
                 {chef.allItems?.chefs.map((chef, index) => (
                   <div key={chef.name} className="chef-card">
