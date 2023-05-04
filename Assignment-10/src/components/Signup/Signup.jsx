@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 import Footer from '../Footer/Footer';
 import './Signup.css'
@@ -7,6 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
 
 const Signup = () => {
 
@@ -39,11 +41,29 @@ const Signup = () => {
             })
     }
 
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(() => {
+                window.location.href = '/home';
+            })
+            .catch((error) => {
+                toast.error(error.message);
+            });
+    };
 
+    const handleGithubSignIn = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(() => {
+                window.location.href = '/home';
+            })
+            .catch((error) => {
+                toast.error(error.message);
+            });
+    };
 
     return (
         <div className='text-center'>
-               <ToastContainer />
+            <ToastContainer />
             <h3 className='py-5'>Please Signup</h3>
             <form className='mt-5' onSubmit={handleSubmit}>
                 <input required type="text" id="name" placeholder="Your name" />
@@ -58,9 +78,14 @@ const Signup = () => {
             </form>
             <p className='text-danger'>{error}</p>
             <p className='text-success'>{success}</p>
+            <div className='mt-3'>
+                <button type="button" className="btn btn-danger" onClick={handleGoogleSignIn}>Sign up with Google</button>
+                <button type="button" className="btn btn-dark ms-2" onClick={handleGithubSignIn}>Sign up with GitHub</button>
+            </div>
             <Footer></Footer>
         </div>
     );
+
 };
 
 export default Signup;
