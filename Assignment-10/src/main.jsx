@@ -16,6 +16,7 @@ import Recipes from './components/Recipes/Recipes';
 import Recipe from './components/Recipe/Recipe';
 import NavChef from './components/NavChef/NavChef';
 import NavRecipes from './components/NavRecipes/NavRecipes';
+import Error from './components/Error/Error';
 
 
 const router = createBrowserRouter([
@@ -54,13 +55,21 @@ const router = createBrowserRouter([
       {
         path: '/recipes',
         element: <NavRecipes></NavRecipes>
+      },
+      {
+        path: '*',
+        element: <Error></Error>
       }
     ]
+  },
+  {
+    path: '*',
+    element: <Error></Error>
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
