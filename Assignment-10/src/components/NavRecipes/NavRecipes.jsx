@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
 
 const NavRecipes = () => {
     const [chef, setChef] = useState([]);
@@ -50,6 +51,7 @@ const NavRecipes = () => {
                     </div>
                 ))}
             </div>
+            <Footer></Footer>
         </div>
     );
 };

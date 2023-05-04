@@ -3,12 +3,13 @@ import './Recipe.css'
 import './Recipe.css';
 import Footer from '../Footer/Footer';
 
+
 const Recipe = () => {
   const selectedRecipe = JSON.parse(localStorage.getItem('selectedRecipe'));
 
 
   const handleGoBack = () => {
-    location.href = '/chef'
+    window.history.back();
   };
 
   return (

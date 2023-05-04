@@ -1,40 +1,44 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 
 const Blog = () => {
   return (
-    <div className="container my-4">
-      <div className="row">
-        <div className="col">
-          <div className="custom-bg p-4 mb-4">
-            <h4 className="fw-bold">Q1: When should you use context API?</h4>
-            <p><span className='fw-bold'>Ans:</span> Context API is useful when you need to pass data between components that are not directly connected in the component tree. It avoids the need to pass props down through multiple levels of components, which can become cumbersome and difficult to manage.</p>
+    <div>
+      <div className="container my-4">
+        <div className="row">
+          <div className="col">
+            <div className="custom-bg p-4 mb-4 border shadow">
+              <h4 className="thm-clr fw-bold border">Q1: Tell us the differences between uncontrolled and controlled components.</h4>
+              <p><span className='fw-bold'>Ans:</span> Uncontrolled components are components where the form data is handled by the DOM itself, rather than the component. Uncontrolled components allow the DOM to handle the state of the form and its elements, and React simply listens for events to track changes. On the other hand, controlled components are components where the form data is handled by the React component, rather than the DOM. Controlled components manage the state of the form and its elements by using React's state, allowing for more control and validation of form data.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <div className="custom-bg p-4 mb-4 border shadow">
+              <h4 className="thm-clr fw-bold border">Q2: How to validate React props using PropTypes?</h4>
+              <p><span className='fw-bold'>Ans:</span> PropTypes is a package built into React that allows you to validate the data types of props passed to components. PropTypes helps catch bugs early in the development process by providing a runtime check on the data types of the props passed to the components. PropTypes can be used to ensure that the correct data types are being passed down from parent components to child components, making it easier to catch and fix issues.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <div className="custom-bg p-4 mb-4 border shadow">
+              <h4 className="thm-clr fw-bold border">Q3: Tell us the difference between nodejs and express js.</h4>
+              <p><span className='fw-bold'>Ans:</span> Node.js is a JavaScript runtime built on top of the V8 engine, which allows developers to run JavaScript on the server-side. Node.js provides a set of built-in modules and APIs that allow developers to build server-side applications. Express.js, on the other hand, is a popular framework built on top of Node.js that provides additional features and functionalities for building web applications, such as routing, middleware, and template engines.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <div className="custom-bg p-4 mb-4 border shadow">
+              <h4 className="thm-clr fw-bold border">Q4: What is a custom hook, and why will you create a custom hook?</h4>
+              <p><span className='fw-bold'>Ans:</span> Custom hooks are a way to reuse stateful logic in React components. Custom hooks allow you to extract reusable logic from your components and use it across multiple components, making your code more modular and easier to maintain. Custom hooks can be used to encapsulate complex stateful logic, such as data fetching or form validation, and make it more accessible to other components. By creating custom hooks, you can abstract away complex logic and provide a simple and easy-to-use interface for other components to consume.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col">
-          <div className="custom-bg p-4 mb-4">
-            <h4 className="fw-bold">Q2: What is a custom hook?</h4>
-            <p><span className='fw-bold'>Ans:</span> A custom hook is a function that allows you to reuse stateful logic across multiple components in a React application. It's a way to extract common logic into a separate function that can be imported and used in different components.</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <div className="custom-bg p-4 mb-4">
-            <h4 className="fw-bold">Q3: What is useRef?</h4>
-            <p><span className='fw-bold'>Ans:</span> useRef is a hook in React that allows you to create a mutable variable that persists between renders. It's useful when you need to store a value that you want to access in multiple renders, such as a reference to a DOM element or a timer ID.</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <div className="custom-bg p-4 mb-4">
-            <h4 className="fw-bold">Q4: What is useMemo?</h4>
-            <p><span className='fw-bold'>Ans:</span> useMemo is a hook in React that allows you to memoize a function's result, so that it only gets recalculated when the input values change. It's useful when you have a computationally expensive function that gets called frequently, but only needs to be recalculated when the input values change.</p>
-          </div>
-        </div>
-      </div>
+      <Footer></Footer>
     </div>
   );
 };
