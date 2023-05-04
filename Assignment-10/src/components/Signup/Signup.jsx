@@ -37,7 +37,7 @@ const Signup = () => {
                 setError('')
                 event.target.reset();
                 setSuccess('SuccessFull ^__^')
-                window.location.href = '/home'; // Redirect to home page
+                window.location.href = '/home';
             })
             .catch(error =>{
                 console.error(error)

@@ -3,6 +3,7 @@ import Recipes from "../Recipes/Recipes"
 import Chefs from "../Chefs/Chefs";
 import './Home.css';
 import Footer from "../Footer/Footer";
+import Extra from "../Extra/Extra";
 
 const Home = () => {
   const [chef, setChef] = useState([]);
@@ -78,6 +79,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Extra></Extra>
       <Footer></Footer>
     </div>
 
