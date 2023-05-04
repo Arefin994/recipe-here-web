@@ -1,6 +1,11 @@
 import React from 'react';
 import './Extra.css'
 const Extra = () => {
+
+    const handleClick = () =>{
+        location.href='/recipes';
+    }
+
     return (
         <div>
             <div className='d-flex thm-bg-clr my-3'>
@@ -38,7 +43,7 @@ const Extra = () => {
                     <img src="https://c4.wallpaperflare.com/wallpaper/548/539/716/food-sushi-wallpaper-preview.jpg" alt="Banner Image" />
                     <div className="banner-content">
                         <h1 className="banner-title thm-bg-clr ">Check out our latest recipes</h1>
-                        <button className="banner-btn">Have a look</button>
+                        <button onClick={handleClick} className="banner-btn">Have a look</button>
                     </div>
                 </div>
             </div>

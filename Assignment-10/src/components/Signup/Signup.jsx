@@ -3,6 +3,8 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import app from '../../firebase/firebase.config';
 import Footer from '../Footer/Footer';
 import './Signup.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const auth = getAuth(app);
 
@@ -10,18 +12,7 @@ const Signup = () => {
 
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('')
-    const showToast = (message) => {
-        const toast = document.createElement('div');
-        toast.classList.add('toast');
-        toast.textContent = message;
-        document.body.appendChild(toast);
-        setTimeout(() => {
-            toast.classList.add('show');
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
-        }, 100); 
-    }
+
     const handleSubmit = (event) => {
         setSuccess('');
         event.preventDefault();
@@ -43,7 +34,7 @@ const Signup = () => {
                 console.error(error)
                 setError(error.message);
                 if (error.code === 'auth/email-already-in-use') {
-                    showToast('Email already exists');
+                    toast.error('Email Already Exist');
                 }
             })
     }
@@ -52,6 +43,7 @@ const Signup = () => {
 
     return (
         <div className='text-center'>
+               <ToastContainer />
             <h3 className='py-5'>Please Signup</h3>
             <form className='mt-5' onSubmit={handleSubmit}>
                 <input required type="text" id="name" placeholder="Your name" />

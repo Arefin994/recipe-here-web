@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 import { toast } from 'react-toastify';
+import Footer from '../Footer/Footer';
 
 const auth = getAuth(app);
 
@@ -51,6 +52,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
