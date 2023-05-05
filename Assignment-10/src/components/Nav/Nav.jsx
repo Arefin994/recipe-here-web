@@ -1,8 +1,8 @@
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 import { useState, useEffect } from 'react';
-
+import './Nav.css'
 const auth = getAuth(app);
 
 const Nav = () => {
@@ -40,16 +40,16 @@ const Nav = () => {
                     <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul className="navbar-nav flex-grow-1">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+                                <NavLink className="nav-link" activeClassName="active" to="/home">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/recipes">Recipes</Link>
+                                <NavLink className="nav-link" activeClassName="active" to="/recipes">Recipes</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/chefs">Chefs</Link>
+                                <NavLink className="nav-link" activeClassName="active" to="/chefs">Chefs</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/blog'>Blog</Link>
+                                <NavLink className="nav-link" activeClassName="active" to='/blog'>Blog</NavLink>
                             </li>
                         </ul>
                         <div className="ms-auto">
@@ -85,3 +85,4 @@ const Nav = () => {
 };
 
 export default Nav;
+
